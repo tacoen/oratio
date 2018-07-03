@@ -1,0 +1,226 @@
+body {
+	background-color: #707570
+}
+
+.words button {
+    border: none;
+    background: none;
+    float: right;
+}
+
+.oratio p:last-child { margin-bottom: 0 !important }
+
+.pick,.random { cursor:pointer}
+.pick:before,
+.random:before {
+	color: #f91 !important;
+}
+
+.oratio p { margin: 0 0 0 0; position: relative }
+
+.oratio p.p,
+.oratio p.u,
+.oratio p.a,
+.oratio p.b,
+.oratio p.c,
+.oratio p.g { margin: 0 0 0 24px; position: relative; }
+
+.oratio p:before { position: absolute; left: -24px; opacity: .7 }
+.oratio p.p:before { content: 'P:' }
+.oratio p.b:before { content: 'B:' }
+.oratio p.u:before { content: 'U:' }
+.oratio p.a:before { content: 'alt'; font-style:italic; font-size: .8em}
+.oratio p.g:before { content: "\e923"; font-family:'ahb-icon'; }
+.oratio p.c:before { content: "\e924"; font-family:'ahb-icon'; }
+
+p.i { margin: .5em 0  }
+p.n { margin: .5em 0; font-size: .9em }
+p.g { color: #733; }
+
+/*
+.oratio i.p {display:block; opacity: .5 float: left;width: 24px; line-height: 1.5; height: 24px;}
+*/
+
+.oratio .opted p { margin-right: 1.5rem !important }
+
+.doa-title {
+	font-size: .75rem;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.nice p {
+    margin: .5em 0 0 24px!important;
+}
+
+.notitle .doa-title { display:none; }
+span.who { border-bottom: 1px dashed #c00; }
+
+a.topic { padding-left: 24px; }
+a.topic:before { font-family:'ahb-icon'; width: 24px;line-height: 24px; height: 24px; text-align:center; }
+a.topic.in:before { content: "\e914" }
+a.topic.out:before { content: "\e91e" }
+a.topic.none:before { content: "\e915" }
+
+li a.can-delete {
+	display:none; 
+    width: 20px;
+    position: absolute;
+    left: -.7rem;
+    top: 35%;
+	cursor:pointer;
+}
+
+li:hover a.can-delete {
+	display:block;
+    box-shadow: 0 0 3px #00000066;
+}
+
+.clipboard h3 {
+    text-transform: capitalize;
+}
+
+.clipboard .view div {
+    padding:  1em;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.clipboard .edit textarea {
+    border-top: none;
+}
+
+ul.filelist {
+    padding: 1rem .5em;
+    border: 1px solid #00000033;
+    border-top: none;
+}
+
+li.file {
+    list-style-type: none;
+    margin: 0;
+    padding: .5em .25em;
+    border-bottom: 1px solid #00000033;
+}
+
+li.file:last-child {
+    border-bottom: none;
+}
+
+li.file a {
+    display: block; 
+    position:relative;
+    padding-left:24px;
+}
+
+li.file a:before {
+	font-family: 'ahb-icon'; content: '\e91b';
+	color: #00000099;
+	position: absolute;
+	left: 0px
+}
+
+.doa.swipeable.with-index {
+    padding-top: 0;
+}
+
+
+.doa.swipeable .index {
+	margin: 0 -1.25rem 1rem -1.25rem;
+	padding: 0 1.25rem;
+	display: flex;
+	height: 1.75em;
+	justify-content: center;
+}
+
+.doa.swipeable .index .item {
+	margin: 0 .25rem;
+	font-weight: 600;
+	cursor:pointer;
+	font-size: 3rem;
+	line-height: 1.2rem;
+}
+
+.chains .ask { font-style: italic; }
+.gerak { color: #911; }
+
+.oratio b { color: #911; font-weight:normal }
+
+.oratio .tab-pane {
+    padding: .75em;
+    border: 1px solid #dee2e6;
+    border-top: none;
+}
+
+.with-counter div.doa {
+    margin-left: 1.25em;
+}
+
+
+#rosario_count {
+    display: flex;
+    width: 2em;
+    height: 2em;
+    font-size: 1.2rem;
+    justify-content: center;
+    justify-items: center;
+    line-height: calc(2em - 2px);
+    position: absolute;
+    top: 35%;
+    left: -.5em;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+#rosario_count.counting { 
+	font-weight: bold;
+	background: #000;
+    animation: pulse .5s .25s 2;
+}
+
+#rosario_count:hover {
+    font-weight: bold;
+}
+
+@keyframes pulse {
+    from{transform: scale(1)}
+    to{transform: scale(.8)}
+}
+
+@keyframes spin {
+    from{transform: rotate(0)}
+    to{transform: rotate(360deg)}
+}
+
+.hip { font-weight:bold; color: #f00; text-decoration: underscore; }
+
+
+.peristiwa-name {
+    text-transform: capitalize;
+    line-height: 2;
+    display: block;
+    height: 2em;
+    font-size: 1.1rem;
+}
+
+.counter_rosario {
+    border:  1px solid #00000033;
+    border-radius: .25rem;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    background: #00000011;
+}
+
+table .topic.badge {
+    margin-right: .5em;
+}
+
+.pray-for { background: #ff0 }
+.pray-for:before { content:"[" }
+.pray-for:after { content:"]" }
+
+
+.current[data-table='renungan'] p { margin-left: 0 !important; }
+

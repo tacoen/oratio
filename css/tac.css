@@ -1,0 +1,98 @@
+@import url("ico/style.css");
+[class^="icah-"],[class*=" icah-"] {display:flex}
+.rotate90 {transform:rotate(90deg)}
+.rotate-90 {transform:rotate(-90deg)}
+/* bootstrap fix */
+.list-group-item {background-color:transparent}
+body.tac,html {height:100%}
+body.tac{position:relative}
+.tac div.row:first-child {margin-top:-4px}
+.tac nav.fixed-top{box-shadow:0 0 8px #00000055}
+.tac .navbar-toggler{padding:0.25rem 0.35rem}
+.tac .covers-container {min-height:100%;height: 100%;min-width:100%;margin-top:-4em;padding: 5em 1.25em;}
+.tac h4.card-header {font-size:1.2rem}
+.card-body .list-group{margin:-1.25rem;margin-top:1.25rem}
+.card-body .list-group:first-child{margin-top:-1.25rem}
+.text-white .card-header button{color:#fff}
+.mute-footer .card-footer{font-size:.85em;opacity:.6}
+button:focus,button:focus-within,button:visited{outline:none}
+.text-white button{color:#fff}
+[data-spy="scroll"]{position:relative;overflow-y:scroll}
+.list-group.narrow .list-group-item{padding:.5em .25em}
+.force-fit {width:100% !important}
+.li-split {border-top:1px solid #dee2e6;height:1px}
+/* bs scrollbar */
+[class^="scroll-"]::-webkit-scrollbar,[class*=" scroll-"]::-webkit-scrollbar{width:3px}
+[class^="scroll-"]::-webkit-scrollbar-track,[class*=" scroll-"]::-webkit-scrollbar-track{background:#00000005}
+[class^="scroll-"]::-webkit-scrollbar-thumb,[class*=" scroll-"]::-webkit-scrollbar-thumb{border:1px solid #00000011}
+.scroll-primary::-webkit-scrollbar-thumb{background-color:#007bff}
+.scroll-secondary::-webkit-scrollbar-thumb{background-color:#6c757d !important}
+.scroll-success::-webkit-scrollbar-thumb{background-color:#28a745 !important}
+.scroll-info::-webkit-scrollbar-thumb{background-color:#17a2b8 !important}
+.scroll-warning::-webkit-scrollbar-thumb{background-color:#ffc107 !important}
+.scroll-danger::-webkit-scrollbar-thumb{background-color:#dc3545 !important}
+.scroll-light::-webkit-scrollbar-thumb{background-color:#f8f9fa !important}
+.scroll-dark::-webkit-scrollbar-thumb{background-color:#343a40 !important}
+.scroll-white::-webkit-scrollbar-thumb{background-color:#fff !important}
+/* additionals */
+.bg-primary-fade {background-color:#007bff33 !important}
+.bg-secondary-fade {background-color:#6c757d33 !important}
+.bg-success-fade {background-color:#28a74533 !important}
+.bg-info-fade {background-color:#17a2b833 !important}
+.bg-warning-fade {background-color:#ffc10733 !important}
+.bg-danger-fade {background-color:#dc354599 !important}
+.bg-light-fade {background-color:#f8f9fa99 !important}
+.bg-dark-fade {background-color:#343a4033 !important}
+.bg-white-fade {background-color:#ffffff99 !important}
+/* tac */  
+a.toc-item{display:block}
+a:hover.toc-item{text-decoration:none}
+.bg-fade{background:#000000dd}
+.navbar-alt{justify-content:space-around}
+.modal-dialog-bottom{position:fixed;bottom:4em;left:1em;max-width:calc(100% - 2em)}
+.nav-button button i[class*="icah-"]{font-size:1.5em;width:1.5em;height:1.5em}
+.opt-button{padding:0.25rem 0.25rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid #00000044;border-radius:0.25rem}
+.nav-toolbar .nav-button { margin-left: 1em; }
+.nav-toolbar .nav-button:first-child { margin-left:0; }
+.card-body .opt-button{margin-right:0}
+.opt-button.float-right:first-child{margin-right:0}
+.opt-button.float-left:first-child{margin-left:0}
+.opt-button:not(:disabled):not(.disabled),.nav-button:not(:disabled):not(.disabled){cursor:pointer}
+.card-header {height: 54px;}
+.card-header button {margin-left:.5em}
+.card-header button:last-child {margin-left:0}
+.card-header span {font-size:1.1rem;line-height:1.75}
+button.navbar-toggler:hover{z-index:2;box-shadow:inset 0px 0px 1px #ffffff77}
+.navbar-dark .opt-button,.navbar-dark .nav-button{color:rgba(255,255,255,0.5);border-color:rgba(255,255,255,0.1)}
+.swipeable{overflow:hidden;margin:-.75rem -1.25rem 0 -1.25rem;padding:0 1.25rem}
+.swipeable > div.placeholder{position:relative}
+.swipeable > div.placeholder:not(.show){opacity:0;display:none}
+.swipeable > div.placeholder.show{opacity:1}
+.swipeable > div.placeholder:not(.show) > *{display:none}
+.swipeable:hover:before,.swipeable:hover:after{display:block;position:absolute;top:1px;width:24px;height:24px;line-height:24px;text-align:center;color:#00000066}
+.swipeable:hover:before{font-family:'ahb-icon';content:"\e928";left:-4px}
+.swipeable:hover:after{font-family:'ahb-icon';content:"\e929";right:-4px}
+@keyframes from_right{from{right:-100%;opacity:0}to{right:0;opacity:1}}
+@keyframes from_left{from{left:-100%;opacity:0}to{left:0;opacity:1}}
+aside{position:fixed !important;z-index:1031;overflow-y:auto;overflow-x:hidden;transition-duration:0.35s;transition-delay:0.10s;opacity:0;padding:15px;box-shadow:0 -3px 8px #00000033}
+aside::-webkit-scrollbar{width:3px}
+aside::-webkit-scrollbar-track{background:#00000005}
+aside::-webkit-scrollbar-thumb{background:#fc3;border:1px solid #00000011}
+aside.topz{top:0 !important;z-index:1040}
+aside.on-right{right:0;transition-property:right,opacity}
+aside.on-left{left:0;transition-property:left,opacity}
+aside.show{opacity:1}
+aside.on-left:not(.show){left:-100%}
+aside.on-right:not(.show){right:-100%}
+aside.topz > .aside-body{margin-top:1em}
+.aside-header{border-bottom:1px solid #ccc;min-height:2.5em;margin:0 -1.25em;padding:0 1.125em}
+@media (max-width:576px) {.tac a.navbar-brand,.tac .card-header span {overflow:hidden;max-width:60%;white-space:nowrap;text-overflow:ellipsis;display:inline-block}}
+
+.tac .pop-alert{ 
+    width: calc(100% - 5em);
+    position: fixed;
+    top: 8em;
+    left: 2.5em;
+    z-index: 1032;
+    box-shadow: 2px 1px 3px #00000099;
+}

@@ -1,0 +1,15 @@
+<?php
+
+$test_long = "Fusce ipsum diam, placerat in quam id, ultricies suscipit justo. Vestibulum quis nisl hendrerit, tincidunt orci sit amet, placerat quam. Nulla auctor massa vel lorem efficitur dignissim. Mauris hendrerit ultricies lectus, eget pharetra turpis tincidunt at. Cras metus libero, viverra et efficitur nec, sagittis at metus. Maecenas eu arcu tincidunt, maximus neque ac, consequat risus. Vivamus mauris leo, ornare at varius eget, auctor egestas nisi. Praesent porttitor condimentum quam eget vestibulum. Etiam tincidunt nulla eros, quis vestibulum risus gravida vel. Morbi eu egestas felis, in dapibus nibh.";
+$test_short1 = "Lorem ipsum dolor sit ame";
+$test_short2 = "Aenean laoreet ipsum ac tortor semper pellentesque";
+$test_paragraph = "<h3>Aenean laoreet</h3><p>Curabitur ut imperdiet quam. Mauris at erat est. Morbi lacus leo, consectetur in enim id, elementum fringilla urna. Praesent sit amet accumsan augue. Cras ac vulputate magna, a accumsan metus. Pellentesque a venenatis nisi. Nullam consectetur quis nisi eu venenatis.</p>";
+$test_short = $test_short1." ".$test_short2." Period!";
+$test_format = "<p>Nullam quis risus eget <a href='#'>urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p><small>This line of text is meant to be treated as fine print.</small> The following is <strong>rendered as bold text</strong>. The following is <em>rendered as italicized text</em>.<p>An abbreviation of the word attribute is <abbr title='attribute'>attr</abbr>.</p>";
+$test_list = "<ul class='list-group text-body'><li class='list-group-item d-flex justify-content-between align-items-center'>Cras justo odio<span class='badge badge-primary badge-pill'>14</span></li><li class='list-group-item d-flex justify-content-between align-items-center'>Dapibus ac facilisis in<span class='badge badge-primary badge-pill'>2</span></li><li class='list-group-item d-flex justify-content-between align-items-center'>Morbi leo risus<span class='badge badge-primary badge-pill'>1</span></li></ul>";
+$test_inlineform = "<div class='form-group'><div class='input-group mb-3'><div class='input-group-prepend'><span class='icah-book input-group-text'></span></div><input type='text' class='form-control' aria-label='Amount (to the nearest dollar)'><div class='input-group-append'><span class='icah-edit-3 input-group-text'></span></div></div></div>";
+$test_all = $test_short1." ".$test_short2." ".$test_long;
+
+$test_ahb = "<ul class='list-group list-group-flush oratio'><li class='random-words list-group-item opted'><button class='opt-button text-muted'><i class='icah-more-vertical'></i></button><p class='random p'>$test_long</p></li><li class='list-group-item'>$test_inlineform</li></ul>";
+
+?>
