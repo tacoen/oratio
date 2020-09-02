@@ -36,7 +36,7 @@ function browse_card($buttons='',$res=array()) {
 				oratio::item(array(
 					'content'=>
 						"<div class='current' " .$str_data.
-						//"data-id='".$res['id']."' data-subject='".$res['subject']."' data-topics='".$res['topics']."' data-table='".$res['table'].
+						"data-id='".$res['id']."' data-subject='".$res['subject']."' data-topics='".$res['topics']."' data-table='".$res['table'].
 						"'>".$res['html']."</div>"
 				))
 			,'nice')
@@ -288,7 +288,7 @@ class ac {
 			if (!empty($opt['prepend'])) { $str .="<div class='mb-2 prepend'>".$opt['prepend']."</div>"; }
 			$str .=$modal_btn;
 			if (empty($opt['order'])) { $random='random'; } else { $random=''; }
-			$str .="<p class='$random ". $opt['class']."' data-li='".$res[0]." 'data-id='".$res[1]."'>".$res[2]."</p>";
+			$str .="<p class='$random ". $opt['class']."' data-li='".$res[0]."' data-id='".$res[1]."'>".$res[2]."</p>";
 			if (!empty($opt['append'])) { $str .="<div class='mt-2 append'>".$opt['append']."</div>"; }
 
 		}
@@ -331,7 +331,7 @@ class ac {
 
 		if (!empty($opt['prepend'])) { $str .="<div class='mb-2 prepend'>".$opt['prepend']."</div>"; }
 		$str .=$modal_btn;
-		$str .="<p class='random ". $opt['class']."' data-li='".$res[0]."'data-id='".$res[1]."'>".$res[2]."</p>\n";
+		$str .="<p class='random ". $opt['class']."' data-li='".$res[0]."' data-id='".$res[1]."'>".$res[2]."</p>\n";
 		if (!empty($opt['append'])) { $str .="<div class='mt-2 append'>".$opt['append']."</div>"; }
 
 		ac::$chains_links[$opt['name']]=

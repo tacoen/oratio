@@ -52,7 +52,7 @@ $h->container(
 			oratio::item(array(
 				'content'=>ac::words(array('subject'=>'syukur', 'class'=>'p','bucket'=>true,'topic_in'=>array('akolit'))),
 				'prepend'=>ac::subtitle("Doa sesudah komuni"),
-				'append'=>"<p class='p'>Dalam Diri-Mu-lah semoga pikiran dan hatiku selalu tertuju, mantap, berakar tak tergoyahkan</p>"
+				'append'=>"<p class='p'>Cintai (kepada) Mu lah (yang akan) memenuhi hati kami untuk selama-lamanya.</p>"
 			))
 		)
 	)).

@@ -3,6 +3,10 @@ require("php/tac.php");
 require("php/oratio-db.php");
 require("php/oratio-func.php");
 
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
+
+
 $doa = new Doa('db/oratio.db');
 $cus = new Custom('db/oratio-custom.db');
 

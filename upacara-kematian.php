@@ -95,7 +95,7 @@ $h->container(
 
 	bs::card(array(
 	'title'=>'Pengantar Pemakaman',
-	'options'=>ac::jn("Dilanjutkan dengan <a href='upacara-makam.php'>Upacara Pemakaman</a>."),
+	'options'=>ac::jn("Dilanjutkan dengan <a href='upacara-pemakaman.php'>Upacara Pemakaman</a>."),
 	'toc'=>true,
 	'body_class'=>'collapse',	
 	'button'=>

@@ -1,8 +1,8 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
 
 $conf["navlink"]=array(
 	array('href'=>'index.php','title'=>'Index','name'=>'home'),
@@ -17,6 +17,9 @@ $conf["navlink"]=array(
 	array('href'=>'admin/','title'=>'Lite Admin','group'=>'admin','name'=>'admin'),
 	array('href'=>'upacara-kematian.php','title'=>'Upacara Kematian','group'=>'tugas'),
 	array('href'=>'upacara-pemakaman.php','title'=>'Upacara Pemakaman','group'=>'tugas'),
+	
+	array('href'=>'doa-rumus.php','title'=>'Doa (Rumus)','group'=>'apps'),
+
 );
 
 if ($h->personalize) {

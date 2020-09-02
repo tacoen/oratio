@@ -404,6 +404,7 @@ function clipboard_browse(card, name) {
 			posting.done ( function(e,d,res) { 
 				var alert = "<div class='pop-alert alert alert-success alert-dismissible'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong>Success! </strong>"+e+"</div>";
 				$('body').prepend(alert);
+				clipboard_browse(card, name);
 			})
 
 		});
@@ -412,7 +413,11 @@ function clipboard_browse(card, name) {
 			e.preventDefault();
 			var form = $(this).closest('form');
 			var id = form.data('id');
-			$.get("xhr.php?c=clip_delete&i="+id, function(r){})
+			$.get("xhr.php?c=clip_delete&i="+id, function(r){
+				var alert = "<div class='pop-alert alert alert-danger alert-dismissible'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong>Deleted! </strong>"+id+"</div>";
+				$('body').prepend(alert);
+				clipboard_browse(card, name);
+			})
 
 		});
 
